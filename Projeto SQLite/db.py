@@ -1,6 +1,6 @@
 import sqlite3 
 
-conn = sqlite3.connect('C:\\Users\\dougl\\OneDrive\\Área de Trabalho\\Douglas\\Programacao\\Python\\Projeto SQLite\\Estoque.db')
+conn = sqlite3.connect('Projeto SQLite\Estoque.db')
 cursor = conn.cursor()
 
 cursor.execute("""DROP TABLE produtos""")

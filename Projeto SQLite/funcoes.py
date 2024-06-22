@@ -4,7 +4,7 @@ def conectar_db():
         """
         Conecta no banco de dados utilizado e retona a conexão e o cursor para evitar ter que copiar o path da bd muitas vezes
         """
-        conn = sqlite3.connect('C:\\Users\\dougl\\OneDrive\\Área de Trabalho\\Douglas\\Programacao\\Python\\Projeto SQLite\\Estoque.db')
+        conn = sqlite3.connect('Projeto SQLite\Estoque.db')
         cursor = conn.cursor()
         
         return conn, cursor
@@ -57,7 +57,7 @@ def consulta_relatorio_geral() -> list:
         rows = cursor.fetchall()
         close_conn(conn)
 
-        #with open('C:\\Users\\dougl\\OneDrive\\Área de Trabalho\\Douglas\\Programação\\Python\\Projeto SQLite\\relatorio.txt', 'a') as file:
+        #with open('Projeto SQLite\relatorio.txt', 'a') as file:
         #        file.write(f"\n     RELATORIO GERAL DE VENDAS:\n")
         #        file.write("=" * 100)
         #        file.write("\n      Produto      |  Quantidade no estoque  |  Preço  |  Numero de vendas  |  Lucro Total   \n")
